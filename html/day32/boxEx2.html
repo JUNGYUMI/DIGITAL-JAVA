@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body::after{
+            clear: both;
+            content: '';
+            display: block;
+        }
+        .box{
+            margin:10px;
+            height:100px;
+            border: 1px solid red;
+
+        }
+        
+        .boxx{
+            margin-left:10px;
+            width: calc(50% - 15px);
+            height:300px;
+            border: 1px solid red;
+            float:left;
+            box-sizing: border-box;
+        }
+    
+         .boxxx{
+            margin-right:10px;
+            width:calc(50% - 15px);
+            height:300px;
+            border: 1px solid red;
+            float:right;
+            box-sizing: border-box;
+         }
+
+       
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="boxx"></div>
+    <div class="boxxx"></div>
+    <div class="boxx"></div>
+    <div class="boxxx"></div>
+</body>
+</html>

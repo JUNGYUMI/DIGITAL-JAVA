@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS:애니메이션</title>
+    <style>
+        @keyframes zoom{
+            0%{
+                font-size: 16px;
+            }
+            50%{
+                font-size: 40px;
+            }
+            100%{
+                font-size: 16px;
+            }
+        }
+       
+        .zoom{
+            animation-name: zoom;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <span class="zoom">꽝!</span>
+</body>
+</html>

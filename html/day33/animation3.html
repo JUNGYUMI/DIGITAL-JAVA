@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS:애니메이션</title>
+    <style>
+        @keyframes zoom{
+            0%{
+                font-size: 16px;
+            }
+            50%{
+                font-size: 40px;
+            }
+            100%{
+                font-size: 16px;
+            }
+        }
+       
+        .zoom1, 
+        .zoom2, 
+        .zoom3, 
+        .zoom4, 
+        .zoom5{
+            animation-name: zoom;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        div{
+            height: 60px;
+        }
+        .zoom2{
+            animation-timing-function: ease-in-out;
+        }
+        .zoom3{
+            animation-timing-function: linear;
+        }
+        .zoom4{
+            animation-timing-function: ease-in;
+        }
+        .zoom5{
+            animation-timing-function: step-start;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <span class="zoom1">꽝!</span>
+    </div>
+    <div>
+        <span class="zoom2">꽝!</span>
+    </div>
+    <div>
+        <span class="zoom3">꽝!</span>
+    </div>
+    <div>
+        <span class="zoom4">꽝!</span>
+    </div>
+    <div>
+        <span class="zoom5">꽝!</span>
+    </div>
+    
+</body>
+</html>
